@@ -84,6 +84,7 @@ class scrape_supports(object):
         out = None
 
         for hcode, title in codes:
+	    print "Another hcode and title !" + hcode + title 
 
             fmt = {'year':year,'hcode':hcode }
 
@@ -124,6 +125,7 @@ class scrape_supports(object):
                        pass
                 frame = pq(frame)
                 for row in frame("TR"):
+		    print "Yay a row !" + str(row)
                     row = pq(row)
                     _row = dict(year=year,hcode=hcode,title=title.encode('utf8'),item_code=item_code)
                     i = 1
