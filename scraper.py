@@ -125,7 +125,7 @@ class scrape_supports(object):
                 frame = pq(frame)
                 for row in frame("TR"):
                     row = pq(row)
-                    _row = dict(year=year,hcode=hcode,title=title.encode('utf8'),item_code=item_code]
+                    _row = dict(year=year,hcode=hcode,title=title.encode('utf8'),item_code=item_code)
                     i = 1
                     for x in row("TD.x3_0, TD.x3_1, TD.x2_0, TD.x2_1"):
                         x=pq(x)
